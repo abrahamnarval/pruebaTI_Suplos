@@ -1,0 +1,12 @@
+.container{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.search{
+    justify-content: center;
+}
+
+.home{
+    height: 40px;
+}

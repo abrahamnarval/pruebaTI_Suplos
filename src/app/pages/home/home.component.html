@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="col-md-8 text-center">
+    <div class="col">
+      <h1>
+        Encuentra las mejores imagenes a través de este grandioso buscador.
+      </h1>
+      <h5>
+        Buscador de imagenes gratuitas.
+      </h5>
+    </div>
+    <div class="col">
+      <img src="../../../assets/image/Instagram post _Monochromatic.svg" alt="" />
+    </div>
+  </div>
+
+  <br>
+
+  <form class="search col-md-6">
+    <div class="input-group mb-2 mr-sm-2">
+      
+      <div class="input-group-prepend">
+        <button class="btn btn-light" type="button" (click)="onEnter(text.value)" ><img src="../../../assets/icon/icons8-search2.svg" alt="" /></button>
+      </div>
+
+      <input type="text" class="form-control" id="text" placeholder="Buscador de imagenes" (keyup.enter)="onEnter(text.value)" #text >
+
+    </div>
+  </form>
+</div>

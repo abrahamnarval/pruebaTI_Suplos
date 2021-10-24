@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row" >
+    <a [routerLink]="['/']" type="button" class="btn btn-primary col col home" >Home</a>
+    <form class="search  col col-11">
+      <div class="input-group mb-2 mr-sm-2">
+        
+        <div class="input-group-prepend">
+          <button class="btn btn-light" (click)="onEnter(text.value)" ><img src="../../../assets/icon/icons8-search2.svg" alt="" /></button>
+        </div>
+
+        <input type="text" class="form-control" id="text" placeholder="Buscador de imagenes" (keyup.enter)="onEnter(text.value)" #text >
+
+        <select class="form-select form-control" aria-label="select_filter" name="filter" type="select" (ngModelChange)="selectCategory($event)" [(ngModel)]="category" >
+          <option value="undefined" selected>Categoría</option>
+            <option *ngFor="let filter of filters" >
+              {{filter}}
+            </option>
+        </select>
+
+      </div>
+    </form>
+  </div>
+
+  <app-card></app-card>
+  
+</div>

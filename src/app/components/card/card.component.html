@@ -1,0 +1,15 @@
+<div class="card-deck cardContainer">
+  <div class="card cardBox" *ngFor="let item of imageService.images">
+    <img src="{{item.webformatURL}}" class="card-img-top cardImage" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">Detalles</h5>
+      <p class="card-text">
+        <img src="../../../assets/icon/tags.svg" alt="" class="icons" /> Tags: {{item.tags}}
+        <br>
+        <img src="../../../assets/icon/view.svg" alt="" class="icons" /> Views: {{item.views}}
+        <br>
+        <img src="../../../assets/icon/like.svg" alt="" class="icons" /> Likes: {{item.likes}}
+      </p>
+    </div>
+  </div>
+</div>
